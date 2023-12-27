@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Frontend Mentor | Manage landing page</title>
+</head>
+<body class="family-viet">
+<main>
+  <header >
+    <nav class="inline-flex md:relative p-1 md:p-4 m-4 md:flex md:flex-row md:items-center  md:justify-between ">
+    <!-- site logo goes here  -->
+    <div>
+    <span class="cusrsor-pointer">
+      <img class="md:w-4/5 mt-0"  src="/manage-landing-page-master/images/logo.svg" alt="">
+    </span>
+    </div>
+    
+      <ul class=" items-center text-center md:flex flex-row md:items-center z-[1]  md:z-auto md:static absolute md:text-black text-slate-700 bg-white w-4/5  md:w-auto  md:py-0 py-4 md:pl-0 pl-7 md:bg-opacity-0 md:opacity-100 opacity-100  top-[-400px] transition-all ease-in">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class=" text-xl rounded-2xl cursor-pointer   hover:text-gray-400  transition duration-300">Pricing</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400  transition duration-300">Product</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">About Us</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">Careers</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">Community</a>
+        </li>
+      </ul>
+      
+    <button class="collapse md:visible bg-BrightRed rounded-full p-2 shadow-lg shadow-red-500 hover:text-white text-xl">Get Started</button>
+    <!-- hamburger functionality goes here -->
+      <span class="absolute top-0 right-0 mr-2 md:hidden text-4xl text-black md:text-4xl pt-2 cursor-pointer">
+          <ion-icon name="menu" onclick="Menu(this)" class=""></ion-icon>
+      </span>
+    </nav>   
+  </header>
+
+  <!-- hero section -->
+  <section id="hero-section" class="flex flex-col-reverse h-2/4 w-full md:flex md:flex-row justify-between mx-auto p-5 ">
+  <div id="right-section" class="w-full lg:w-2/5 ">
+    <div id="text">
+    <h3 class="w-5/5 font-bold place-items-center text-2xl md:text-5xl md:w-4/5">
+      Bring everyone together to build better products.
+    </h3>
+    <p class="text-center text-xl md:text-3xl text-gray-500 mt-8">Manage makes it simple for software teams to plan day-to-day 
+        tasks while keeping the larger team goals in view.
+    </p>
+    </div>
+
+    <div class=" md:align-center ti items-center mt-8 mx-auto ">
+    <button id="" class=" mb-0 mt-8 ml-36  bg-BrightRed rounded-full p-2 shadow-lg shadow-red-500 hover:text-white text-xl">Get Started</button>
+    </div>
+  </div>
+
+
+<!-- Right Hero section for Information-graphics  -->
+   <div id="left-section" class="">
+    <div id="top mr-4">
+        <img class="bg-transparent md:h-100 w-full" src="/manage-landing-page-master/images/illustration-intro.svg" alt="">
+   </div>
+  </section>
+
+
+  <section id="difference" class="flex flex-col md:flex md:flex-row justify-between  p-4">
+    <div id="left-diff" class="w-full md:w-4/5 ">
+     <div id="h1x">
+       <h1 class="text-4xl md:text-3xl text-center font-bold md:w-3/5 ">
+        What's Different about Manage?
+      </h1>
+     </div>
+     <div id="text-diff" class=" mt-8 mb-4">
+      <p class="text-2xl text-gray-400 md:w-4/5 ">
+      Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+      </p>
+     </div>
+    </div>
+
+    <!-- left side of the difference section -->
+    <div id="left-diff-section" class=" mx-auto">
+      <div id="track" class="flex flex-row justify-between  ">
+        <div class="one">
+          <span class="block font-bold border-solid border-2 text-center border-green-500 bg-BrightRed rounded-full w-full mr-4 p-1">01</span>
+        </div>
+        <div class="block items-end ">
+          <h5 class="font-bold mb-4 ml-2 p-2 bg-VeryPaleRed">Track company wide-progress</h5>
+          <p class="w-full md:w-3/5 p-2 mb-4">See how your day-to-day tasks fit into the wider vision. Go from 
+  tracking progress at the milestone level all the way done to the 
+  smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+      </div>
+      <div id="built-in" class="flex flex-row  justify-between">
+        <div class="two">
+          <span class="block font-bold border-solid border-2 text-center border-green-500 bg-BrightRed rounded-full w-full mr-4 p-1">02</span>
+        </div>
+        <div class="right-text-one">
+          <h5 class="font-bold mb-4 ml-2 p-2 bg-VeryPaleRed">Advanced built-in reports</h5>
+          <p class="w-full md:w-3 p-2 mb-4">  Set internal delivery estimates and track progress toward company 
+  goals. Our customisable dashboard helps you build out the reports 
+  you need to keep key stakeholders informed.</p>
+        </div>
+      </div>
+      <div id="need" class="flex flex-row justify-between">
+        <div class="one">
+          <span class="block font-bold border-solid border-2 text-center border-green-500 bg-BrightRed rounded-full w-full mr-4 p-1">03</span>
+        </div>
+        <div class="right-text-one">
+          <h5 class="font-bold mb-4 ml-2 p-2 bg-VeryPaleRed">Track company wide-progress</h5>
+          <p class="w-full md:w-3 p-2">Everything you need in one place
+  Stop jumping from one service to another to communicate, store files, 
+  track tasks and share documents. Manage offers an all-in-one team 
+  productivity solution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+  
+
+  
+
+  
+  Get Started
+
+  What’s different about Manage?
+
+  Manage provides all the functionality your team needs, without 
+  the complexity. Our software is tailor-made for modern digital 
+  product teams. 
+
+  01
+  Track company-wide progress
+  
+
+  02
+  
+
+
+  03
+  
+
+  What they’ve said
+
+  Anisha Li
+  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”
+
+  Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
+
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
+
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+  Get Started
+
+  Simplify how your team works today.
+  Get Started
+
+  Home
+  Pricing
+  Products
+  About Us
+  Careers
+  Community
+  Privacy Policy
+
+  Updates in your inbox…
+  Go
+
+  Copyright 2020. All Rights Reserved
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Ogbaje</a>.
+  </div>
+  <script src="/dist/burger.js"></script>
+</body>
+</html>
