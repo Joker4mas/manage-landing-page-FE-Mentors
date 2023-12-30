@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
 <body class="family-viet">
 <main>
   <header >
-    <nav class="inline-flex md:relative p-1 md:p-4 m-4 md:flex md:flex-row md:items-center  md:justify-between ">
+    <nav class="container flex md:relative p-1 md:p-4 m-4 md:flex md:flex-row md:items-center  md:justify-between ">
     <!-- site logo goes here  -->
     <div>
     <span class="cusrsor-pointer">
@@ -23,39 +24,39 @@
     </div>
     
       <ul class=" items-center text-center md:flex flex-row md:items-center z-[1]  md:z-auto md:static absolute md:text-black text-slate-700 bg-white w-4/5  md:w-auto  md:py-0 py-4 md:pl-0 pl-7 md:bg-opacity-0 md:opacity-100 opacity-100  top-[-400px] transition-all ease-in">
-        <li class="mx-4 my-6 md:my-0">
-          <a href="" class=" text-xl rounded-2xl cursor-pointer   hover:text-gray-400  transition duration-300">Pricing</a>
+        <li class="mx-2 my-6 md:my-0 ">
+          <a href="" class=" text-md rounded-2xl cursor-pointer  hover:text-DarkGrayishBlue  transition duration-300">Pricing</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400  transition duration-300">Product</a>
+        <li class="mx-2 my-6 md:my-0">
+          <a href="" class=" text-md rounded-2xl cursor-pointer  hover:text-DarkGrayishBlue  transition duration-300">Product</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">About Us</a>
+        <li class="mx-2 my-6 md:my-0">
+          <a href="" class=" text-md rounded-2xl cursor-pointer  hover:text-DarkGrayishBlue transition duration-300">About Us</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">Careers</a>
+        <li class="mx-2 my-6 md:my-0">
+          <a href="" class=" text-md rounded-2xl cursor-pointer  hover:text-DarkGrayishBlue transition duration-300">Careers</a>
         </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="" class=" text-xl rounded-2xl cursor-pointer  hover:text-gray-400 transition duration-300">Community</a>
+        <li class="mx-2 my-6 md:my-0">
+          <a href="" class=" text-md rounded-2xl cursor-pointer  hover:text-DarkGrayishBlue transition duration-300">Community</a>
         </li>
       </ul>
       
     <button class="w-36 collapse md:visible bg-BrightRed rounded-full p-2 shadow-lg shadow-red-500 hover:text-white text-xl">Get Started</button>
     <!-- hamburger functionality goes here -->
-      <span class="absolute top-0 right-0 mr-2 md:hidden text-4xl text-black md:text-4xl pt-2 cursor-pointer">
+      <span class="absolute top-0 right-0 mr-2 md:hidden text-lg text-black md:text-lg pt-2 cursor-pointer">
           <ion-icon name="menu" onclick="Menu(this)" class=""></ion-icon>
       </span>
     </nav>   
   </header>
 
   <!-- hero section -->
-  <section id="hero-section" class="flex flex-col-reverse gap-4 h-2/4 w-full md:flex md:flex-row justify-between mx-auto p-5 ">
+  <section id="hero-section" class="container  flex flex-col-reverse gap-4 h-2/4 w-full md:flex md:flex-row justify-between mx-auto p-5 ">
   <div id="right-section" class="w-full lg:w-2/5 ">
     <div id="text">
-    <h3 class="w-5/5 font-bold place-items-center text-4xl md:text-5xl md:w-5/5">
+    <h3 class="max-w-lg text-center font-bold place-items-center text-4xl md:text-left md:text-5xl md:w-5/5">
       Bring everyone together to build better products.
     </h3>
-    <p class="text-center text-xl md:text-3xl text-gray-500 mt-8 md:text-left">Manage makes it simple for software teams to plan day-to-day 
+    <p class="max-w-lg text-center text-xl md:text-lg text-DarkGrayishBlue mt-8 md:text-left">Manage makes it simple for software teams to plan day-to-day 
         tasks while keeping the larger team goals in view.
     </p>
     </div>
@@ -74,15 +75,15 @@
   </section>
 
 <!-- difference section -->
-  <section id="difference" class="flex flex-col gap-8 md:flex md:flex-row justify-between  p-4 mx-auto">
+  <section id="difference" class=" flex container flex-col gap-8 md:flex md:flex-row justify-between  p-4 mx-auto">
     <div id="left-diff" class="w-half mb-2 md:w-4/5 ">
      <div id="h1x">
-       <h1 class="text-4xl md:text-3xl text-center font-bold md:w-5/5 md:text-start">
+       <h1 class=" text-3xl text-center font-bold md:max-w-sm md:text-start">
         What's Different about Manage?
       </h1>
      </div>
      <div id="text-diff" class=" mt-8 mb-4">
-      <p class="text-xl text-gray-400  ">
+      <p class="max-w-sm text-lg text-DarkGrayishBlue  ">
       Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
       </p>
      </div>
@@ -91,12 +92,12 @@
     <!-- left side of the difference section -->
     <div id="left-diff-section" class=" mx-auto">
       <div id="track" class="block justify-between">
-        <div class=" flex flex-row bg-VeryPaleRed h-12 rounded-l-3xl w-full md:bg-white ">
-          <span class="font-bold absolute z-10 p-2 mt-1 w-20 text-center bg-BrightRed rounded-full">01</span>
-          <h5 class="font-bold  mb-4 ml-24 mt-2 text-xl ">Track company wide-progress</h5>
+        <div class=" flex flex-row bg-VeryPaleRed h-8 rounded-l-3xl w-full md:bg-white ">
+          <span class="absolute z-10 p-1  w-12 text-white text-center bg-BrightRed rounded-full">01</span>
+          <h3 class=" font-bold mb-4 ml-20  text-xl ">Track company wide-progress</h3>
         </div>
         <div class="block ">
-          <p class="w-full md:w-3/5 p-2 mb-4 md:text-startr md:ml-24">See how your day-to-day tasks fit into the wider vision. Go from 
+          <p class="md:w-3/5 p-2 mb-4 text-sm text-DarkGrayishBlue md:text-start md:ml-20">See how your day-to-day tasks fit into the wider vision. Go from 
             tracking progress at the milestone level all the way done to the 
             smallest of details. Never lose sight of the bigger picture again.</p>
         </div>
@@ -104,12 +105,12 @@
 
       <!-- built-in  -->
       <div id="built-in" class="block  justify-between">
-        <div class="flex flex-grow bg-VeryPaleRed h-12 rounded-l-3xl md:bg-white">
-          <span class="block font-bold absolute border-solid border-2 mt-1 text-center bg-BrightRed rounded-full w-20 p-2">02</span>
-          <h5 class="font-bold mb-4 ml-24 p-2 text-xl">Advanced built-in reports</h5>
+        <div class="flex flex-grow bg-VeryPaleRed h-8 rounded-l-3xl md:bg-white">
+          <span class="absolute z-10  p-1  w-12 text-white text-center bg-BrightRed rounded-full">02</span>
+          <h3 class="font-bold mb-4 ml-20 mt-1 text-lg">Advanced built-in reports</h3>
         </div>
         <div class="block right-text-one">
-          <p class="w-full md:w-3/5 p-2 mb-4 md:ml-24">  Set internal delivery estimates and track progress toward company 
+          <p class="max-w-lg md:w-3/5 p-2 mb-4 md:ml-20 text-sm text-DarkGrayishBlue">  Set internal delivery estimates and track progress toward company 
           goals. Our customizable dashboard helps you build out the reports 
           you need to keep key stakeholders informed.</p>
         </div>
@@ -117,12 +118,12 @@
 
       <!-- needs -->
       <div id="need" class="flex flex-col justify-between">
-        <div class="flex flex-row bg-VeryPaleRed h-12 rounded-l-3xl md:bg-white">
-          <span class="block font-bold absolute bg-BrightRed rounded-full mt-1 text-center w-20 mr-4 p-2">03</span>
-          <h5 class="font-bold mb-4 ml-24 p-2 text-xl">Track company wide-progress</h5>
+        <div class="flex flex-row bg-VeryPaleRed h-8 rounded-l-3xl md:bg-white">
+          <span class="block absolute z-10 p-1 w-12 bg-BrightRed text-white rounded-full text-center  ">03</span>
+          <h3 class="font-bold mb-4 ml-20 text-lg">Everything you need in one place</h3>
         </div>
         <div class="block right-text-one">
-          <p class="w-full md:w-4/5 p-2 md:ml-24">Everything you need in one place
+          <p class="max-w-sm md:w-4/5 p-2 md:ml-20 text-sm text-DarkGrayishBlue">Everything you need in one place
               Stop jumping from one service to another to communicate, store files, 
               track tasks and share documents. Manage offers an all-in-one team 
               productivity solution.</p>
@@ -132,20 +133,21 @@
   </section>
 
 <!-- Testimonials -->
- <section class="flex flex-col">
-    <h2 class="text-4xl text-center font-bold mb-4">What they've said</h2>
+ <section class="">
+    <h2 class="text-4xl text-center m-4 font-bold">What they've said</h2>
 
 
-<div id="carousal">
+<div id="swiper"  class="w-full p-4  text-center items-center md:flex md:flex-row">
+     
       <!-- ali bravo -->
-  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <div class="flex flex-col mx-auto max-w-2xl md:w-1/3 lg:max-w-4xl">
     <figure class="mt-10">
       <figcaption class="mt-10">
-        <img class="mx-auto  h-10 w-10 rounded-full" src="/manage-landing-page-master/images/avatar-ali.png" alt="ali's picture">
-          <div class="font-bold mt-8 text-gray-900 text-center">Ali Bravo</div>
+        <img class="mx-auto  h-15 w-15 rounded-full" src="/manage-landing-page-master/images/avatar-ali.png" alt="ali's picture">
+          <div class="font-bold mt-2 text-gray-900 text-center">Ali Bravo</div>
         
-        <blockquote class="text-center mt-8 text-xl font-semibold leading-8 text-gray-300 sm:text-2xl sm:leading-9">
-        <p>"We have been able to concel so many other suscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused"</p>
+        <blockquote class="text-center mt-4 text-sm text-DarkGrayishBlue ">
+        <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused"</p>
       </blockquote>
         <div class="mt-4 flex items-center justify-center space-x-3 text-base">
         </div>
@@ -154,14 +156,14 @@
   </div>
 
   <!-- anisha li -->
-  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <div class="hidden container flex-col mx-auto md:flex md:w-1/3  lg:max-w-4xl">
     <!-- <h2 class="text-4xl text-center font-bold mb-4">What they've said</h2> -->
     <figure class="mt-10">
       <figcaption class="mt-10">
-        <img class="mx-auto  h-10 w-10 rounded-full" src="/manage-landing-page-master/images/avatar-anisha.png" alt="anisha picture">
-          <div class="font-bold mt-8 text-gray-900 text-center">Anisha Li</div>
+        <img class="mx-auto  h-15 w-15 rounded-full" src="/manage-landing-page-master/images/avatar-anisha.png" alt="anisha picture">
+          <div class="font-bold mt-2 text-gray-900 text-center">Anisha Li</div>
         
-        <blockquote class="text-center mt-8 text-xl font-semibold leading-8 text-gray-300 sm:text-2xl sm:leading-9">
+        <blockquote class="text-center mt-4 text-sm text-DarkGrayishBlue ">
         <p>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
       </blockquote>
         <div class="mt-4 flex items-center justify-center space-x-3 text-base">
@@ -171,32 +173,31 @@
   </div>
 
   <!-- Richards -->
-  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <div class="hidden flex-col md:flex mx-auto md:w-1/3 lg:max-w-4xl">
     <!-- <h2 class="text-4xl text-center font-bold mb-4">What they've said</h2> -->
     <figure class="mt-10">
       <figcaption class="mt-10">
-        <img class="mx-auto  h-10 w-10 rounded-full" src="/manage-landing-page-master/images/avatar-richard.png" alt="Richards picture">
-          <div class="font-bold mt-8 text-gray-900 text-center">Richard Watts</div>
+        <img class="mx-auto  h-15 w-15 rounded-full" src="/manage-landing-page-master/images/avatar-richard.png" alt="Richards picture">
+          <div class="font-bold mt-2 text-gray-900 text-center">Richard Watts</div>
         
-        <blockquote class="text-center mt-8 text-xl font-semibold leading-8 text-gray-300 sm:text-2xl sm:leading-9">
+        <blockquote class="text-center mt-4 text-sm mb-4 text-DarkGrayishBlue  ">
         <p>“Manage allows us to provide structure and process. It keeps us organized 
           and focused. I can’t stop recommending them to everyone I talk to!”</p>
       </blockquote>
-        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-        </div>
+    
       </figcaption>
     </figure>
   </div>
 
   <!-- shanai Gough -->
-  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+  <div class="hidden flex-col xl:flex mx-auto md:w-1/3 lg:max-w-4xl bg-VaryLightGray">
     <!-- <h2 class="text-4xl text-center font-bold mb-4">What they've said</h2> -->
     <figure class="mt-10">
       <figcaption class="mt-10">
-        <img class="mx-auto  h-10 w-10 rounded-full" src="/manage-landing-page-master/images/avatar-shanai.png" alt="shanai picture">
+        <img class="mx-auto  h-15 w-15 rounded-full" src="/manage-landing-page-master/images/avatar-shanai.png" alt="shanai picture">
           <div class="font-bold mt-8 text-gray-900 text-center">Shanai Gough</div>
         
-        <blockquote class="text-center mt-8 text-xl font-semibold leading-8 text-gray-300 sm:text-2xl sm:leading-9">
+        <blockquote class="text-center mt-8 text-md text-DarkGrayishBlue sm:text-2xl sm:leading-9">
         <p>“Their software allows us to track, manage and collaborate on our projects 
           from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
       </blockquote>
@@ -206,53 +207,74 @@
     </figure>
   </div>
 
+  <!-- for pagination -->
+    <div id="swiper-pagination"></div>
+
+    <!-- for navigation -->
+    <div id="swiper-button-pre" class=""></div>
+    <div id="swiper-button-next"></div>
+
 </div>
   
-<div class="btn-test mx-auto">
-  <button class="w-36 bg-BrightRed  rounded-full p-2 shadow-lg text-white text-xl">Get Started</button>
+<div class="btn-test mx-auto text-center">
+  <button class="w-36 bg-BrightRed mb-8 rounded-full p-2 shadow-lg text-white text-xl">Get Started</button>
 </div>
 </section>
 
-<div id="teamWork" class="w-full h-half items-center text-center p-4 bg-BrightRed">
-  <h3 class="text-white text-3xl">Simplify how your team works today.</h3>
-  <button class="w-36  bg-white mt-5 rounded-full p-2 shadow-lg text-BrightRed text-xl">Get Started</button>
+<div id="teamWork" class="py-12 items-center md:py-6 md:flex md:justify-between text-center px-8 bg-BrightRed">
+  <h3 class="max-w-lg text-white text-3xl font-bold p-4 text-start">Simplify how your team works today.</h3>
+  <button class="w-36  bg-white mt-5 md:mt-0 rounded-full p-2 shadow-lg text-BrightRed text-xl hover:bg-black hover:text-white">Get Started</button>
 
 </div>
 
-<footer class="bg-black p-4 text-center  text-white">
-  <div id="search" class=" p-2">
-    <input type="search" name="search" id="search" placeholder="Updates in your inbox…" class=" p-1 rounded-2xl">
-    <button type="submit" class="w-20 bg-BrightRed p-1 rounded-2xl">Go</button>
-  </div>
+<footer class="block bg-black p-4 text-center  text-white">
 
-  <!-- footer links -->
-<div id="footerLink" class="mt-4 mb-4 text-gray-400 grid grid-rows-4 grid-flow-col gap-4 items-center text-left ml-24 md: ">
-<li class="list-none"><a href="">Home</a></li>
-<li class="list-none"><a href="">Pricing</a></li>
-<li class="list-none"><a href="">Products</a></li>
-<li class="list-none"><a href="">About Us</a></li>
-<li class="list-none"><a href="">Careers</a></li>
-<li class="list-none"><a href="">Community</a></li>
-<li class="list-none"><a href="">Privacy Policy</a></li>
-</div>
-<div id="socials" class="flex flex-row gap-8 my-8  ml-24">
+<div class="container flex flex-row gap-8 py-12 mx-auto">
+  <div id="foot-socials" class="block justify-between gap-8">
+<!-- footer logo -->
+  <img src="/manage-landing-page-master/images/logo.svg" alt="logo image" class="mx-auto mb-12">
+
+  <!-- socials -->
+<div id="socials" class="flex flex-row gap-4 my-8  ">
   <img src="/manage-landing-page-master/images/icon-facebook.svg" alt="facebook icon">
   <img src="/manage-landing-page-master/images/icon-youtube.svg" alt="Youtube icon">
   <img src="/manage-landing-page-master/images/icon-twitter.svg" alt="Twitter icon">
   <img src="/manage-landing-page-master/images/icon-pinterest.svg" alt="Pinterest icon">
   <img src="/manage-landing-page-master/images/icon-instagram.svg" alt="instagram icon">
+</div>  
+</div>
 
+
+  
+
+  <!-- footer links -->
+<div id="footerLink" class="mt-4 mb-4 text-gray-400 grid grid-rows-4 grid-flow-col gap-4 items-center text-left ml-24 md: ">
+<li class="list-none hover:text-BrightRed"><a href="">Home</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">Pricing</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">Products</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">About Us</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">Careers</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">Community</a></li>
+<li class="list-none hover:text-BrightRed"><a href="">Privacy Policy</a></li>
 </div>
-<div id="foot" class="">
-  <img src="/manage-landing-page-master/images/logo.svg" alt="logo image" class="mx-auto my-4">
-</div>
+
+<div id="search-copyright">
+  <!-- search and button -->
+  <div id="search" class=" p-2">
+    <input type="search" name="search" id="search" placeholder="Updates in your inbox…" class=" p-1 rounded-2xl">
+    <button type="submit" class="w-20 bg-BrightRed p-1 rounded-2xl">Go</button>
+  </div>
 <p class="text-gray-400">Copyright 2020. All Rights Reserved</p>
+</div>
+</div>
+
 <div class="">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Samuel Ogbaje.</a>.
   </div>
 </footer>
 </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/dist/burger.js"></script>
 </body>
 </html>

@@ -11,3 +11,25 @@ function Menu(e){
     list.classList.remove('top-[80px]'),
     list.classList.remove('opacity-100'))
 }
+
+
+
+const swiper = new Swiper('#swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+   
+  });
